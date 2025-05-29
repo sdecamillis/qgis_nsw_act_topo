@@ -6,7 +6,6 @@ It has been directly built from the work of [qgis-nsw-topo](https://github.com/t
 Here below the detail of a map of Tibdinbilla produced by *qgis_nsw_act_topo*:
 >![Devils Gap to Billy Billy Rocks hike map - detail](/assets/devils_gap_map_detail.jpg)
 >*Detail of a topographic map of the Tidbinbilla Nature Reserve with vegetation coverage and hillshade effect, suitable for map and compass navigation. The purple line represents my latest hike from the Devil's Gap to Billy Billy Rocks.The full map is located in [/assets/devils_gap_map.jpg](/assets/devils_gap_map.jpg)*
-{: style="width: 85%; font-size: 0.9rem;"}
 
 ## Prerequisites
 
