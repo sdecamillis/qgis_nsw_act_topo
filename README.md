@@ -4,8 +4,8 @@ The project *qgis_nsw_act_topo* provides tools to build vector topographic maps 
 It has been directly built from the work of [qgis-nsw-topo](https://github.com/tombrennan06/qgis-nsw-topo/) and [nswtopo](https://github.com/mholling/nswtopo).
 
 Here below the detail of a map of Tibdinbilla produced by *qgis_nsw_act_topo*:
->![Devils Gap to Billy Billy Rocks hike map - detail](/assets/devils_gap_map_detail.jpg)
->*Detail of a topographic map of the Tidbinbilla Nature Reserve with vegetation coverage and hillshade effect, suitable for map and compass navigation. The purple line represents my latest hike from the Devil's Gap to Billy Billy Rocks.The full map is located in [/assets/devils_gap_map.jpg](/assets/devils_gap_map.jpg)*
+>![Devils Gap to Billy Billy Rocks hike map - detail](/assets/devils_gap_map_zoom.jpg)
+>*Detail of a topographic map of the Tidbinbilla Nature Reserve with vegetation coverage and hillshade effect, suitable for map and compass navigation. The purple line represents my latest hike from the Devil's Gap to Billy Billy Rocks. The full map is located in [/assets/devils_gap_map.jpg](/assets/devils_gap_map.jpg)*
 
 ## Prerequisites
 
@@ -22,7 +22,8 @@ The repo contains the following folders:
 * *models*, containing functions to be loaded and executed by the *Processing Toolbox* of QGIS;
 * *topo_styles*, containing the QGIS style files for each imported layer;
 * *svg*, containing QGIS-specific .svg files for custom markers;
-* *templates*, containing templates for the map layout in QGIS.
+* *templates*, containing templates for the map layout in QGIS;
+* *assets*, containing an example of the output of *qgis_nsw_act_topo*.
 
 ## Usage
 
