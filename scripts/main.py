@@ -2,15 +2,13 @@
 qgis-nsw-act-topo
 
 This script is designed to build and manage topographic maps using QGIS.
-It imports necessary layers and styles from specified directories and updates
-the SVG search paths in QGIS settings.
 
-Usage:
-1. Ensure that the required modules are available in the 'scripts' directory.
-3. Instantiate the Topo_map_builder class with the repository directory path.
-4. Access properties to import layers and save layers.
+This script:
+1. Ensures that the required modules are available in the 'scripts' directory.
+3. Instantiates the Topo_map_builder class with the repository directory path.
+4. Imports and save layers.
 
-Author: Simone De Camillis
+Author: S De Camillis
 Date: 29 May 2025
 Version: 1.0
 """
@@ -57,7 +55,7 @@ class Topo_map_builder:
     
     @property
     def osmroad(self):
-        qf.import_road_osm_layer(self.settings)
+        qf.import_road_osm_layer(self.settings, self.style_dir)
         qf.relocate_above_another_layer('road_osm', 'road')
     
     @property

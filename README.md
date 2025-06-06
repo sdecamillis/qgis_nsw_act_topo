@@ -1,7 +1,8 @@
 # qgis_nsw_act_topo
 
-The project *qgis_nsw_act_topo* provides tools to build vector topographic maps for NSW and ACT in QGIS, using spatial data from [NSW Spatial Services](https://portal.spatial.nsw.gov.au/server/rest/services/), raster data for vegetation and hillshade, and possible additional features from [Open Street Map](https://www.openstreetmap.org)
-It has been directly built from the work of [qgis-nsw-topo](https://github.com/tombrennan06/qgis-nsw-topo/) and [nswtopo](https://github.com/mholling/nswtopo).
+The project *qgis_nsw_act_topo* provides tools to build vector topographic maps for NSW and ACT in QGIS, using spatial data from [NSW Spatial Services](https://portal.spatial.nsw.gov.au/server/rest/services/), raster data for vegetation ([TERN Data Discovery Portal](https://data.tern.org.au/rs/public/data/spot/woody_fpc_extent/nsw-2011/)) and hillshade ([Elvis Elevation and Depth Portal](https://elevation.fsdf.org.au/)), with the possibility of including additional features from [Open Street Map](https://www.openstreetmap.org).
+
+This project was built upon the scripts of [qgis-nsw-topo](https://github.com/tombrennan06/qgis-nsw-topo/), which is based on the Ruby-based software of [nswtopo](https://github.com/mholling/nswtopo).
 
 Here below the detail of a map of Tibdinbilla produced by *qgis_nsw_act_topo*:
 >![Devils Gap to Billy Billy Rocks hike map - detail](/assets/devils_gap_map_zoom.jpg)
@@ -52,13 +53,11 @@ Here the general instructions on how to use the *qgis_nsw_act_topo* script in QG
 * you can then click on *Run Script*. The extent boudary layer should appear in the QGIS window.
 * In the *Python Console*, type the command `topo.vegetation` to load the vegetation layer (if any).
 * Type the command `topo.layers` to fetch all the vector data intersecting the extent layer. Depending on the size of the area and the density of features, the script can take more than 5 minutes to complete. Urban areas will generally take longer than bush areas. The list of layers considered in this step are listed in the file *layer_list.py* under the *scripts* folder. You can modify such list to your preference.
-* Type the command `topo.osmroad` to fetch the vector layer of roads from the OpenStreetMap server. You can then 
-* This will fetch all the vector data intersecting the extent layer. Depending on the size of the area and the density of features, the script can take more than 5 minutes to complete. Urban areas will generally take longer than bush areas.
 
 ### Manual adjustments
 
 * You can consider loading the road layer from OpenStreetMap by typing the command `topo.osmroad` in the Python Console. Then, you can tick or untick each sublayer from either the nsw_road or the osm_road layer.
-* If you are familiar with QGIS, you can adjust style and labels.
+* If you are familiar with QGIS, you can adjust style and labels, and turn off some layers.
 * You can import your own layers directly into QGIS. For example, .gpx files with trails or points of interest.
 
 ### Saving layers and project
