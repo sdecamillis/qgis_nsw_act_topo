@@ -338,7 +338,7 @@ def import_vegetation_layer(settings, style_dir=None):
         else:
             print('--> No intersection of vegetation layers with extent layer found.')
     else:
-        print('--> The shapefile {shapefile} of the layout of the vegetation layers was not found.')
+        print(f'--> The shapefile {shapefile} of the layout of the vegetation layers was not found.')
     return
 
 def import_road_osm_layer(settings, style_dir=None):
