@@ -30,9 +30,9 @@ The repo contains the following folders:
 
 Here below a step-by-step description of how to use the tools of this project.
 
-### Instaling QGIS and qgis_nsw_act_topo 
+### Installing QGIS and qgis_nsw_act_topo 
 
-* Download and install the software [QGIS](https://qgis.org/). If you are new to this software, the [QGIS Documentation](https://docs.qgis.org/3.40/en/docs/user_manual/index.html) is a good starting point. If you want to learn more about QGIS and make custom changes to your maps, I would also recommand this [QGIS tutorial](https://www.qgistutorials.com/en/).
+* Download and install the software [QGIS](https://qgis.org/). If you are new to this software, the [QGIS Documentation](https://docs.qgis.org/3.40/en/docs/user_manual/index.html) is a good starting point. If you want to learn more about QGIS and make custom changes to your maps, I would also recommend this [QGIS tutorial](https://www.qgistutorials.com/en/).
 * [optional] under *Settings->Options->CRS* and *Transforms->Coordinate Transform* in QGIS, untick the option *Ask for datum transformation if several are available*. This is a recommended step to avoid the frequent prompts when accessing layer properties. The layers can be projected at later steps or at the map layout.
 * [optional] if you wish to load the street layer from OpenStreetMaps as alternative layer to the NWS data, you first have to set up the processing modeler: in the *Processing Toolbox* of QGIS, load the model file located in the dedicated folder of the repository.
 * Download the repository from Github into your local folder. You will make changes to your local copy of *qgis_nsw_act_topo*.
@@ -40,9 +40,9 @@ Here below a step-by-step description of how to use the tools of this project.
 ### Preliminary steps to create a new topo map
 
 * Create a folder where you will store all the map data and your map project. Here, we will refer to this folder as working directory.
-* Generate a vector layer (hereafter referred to as *extent*) providing the geographical boudaries of your map and place it in your working directory. The website [Ozultimate](https://maps.ozultimate.com) is a very handy solution. Draw a rectangle in the area of interest and save it as a GeoJSON file.
+* Generate a vector layer (hereafter referred to as *extent*) providing the geographical boundaries of your map and place it in your working directory. The website [Ozultimate](https://maps.ozultimate.com) is a very handy solution. Draw a rectangle in the area of interest and save it as a GeoJSON file.
 * [optional] If you wish to have a vegetation layer in the backgrond of your map, you can download the data from the [TERN Data Discovery Portal](https://data.tern.org.au/rs/public/data/spot/woody_fpc_extent/nsw-2011/). Download the _spot_nswgrs.zip_ file for the boundaries of all tiles and the specific tiles of interest (_s5hgps_rXXXcYYY_y20082012_bcvm6_r5m.img_).
-* [optional] If you wish yo have hill-shade effects in the background of your map, you can download the elevation data from the [Elvis Elevation and Depth Portal](https://elevation.fsdf.org.au/). Follow the instruction on the wedsite (tip: you can use the extent file discussed above). [this functionality in the *qgis_nsw_act_topo* scripts is currently under development].
+* [optional] If you wish to have hill-shade effects in the background of your map, you can download the elevation data from the [Elvis Elevation and Depth Portal](https://elevation.fsdf.org.au/). Follow the instruction on the wedsite (tip: you can use the extent file discussed above). [this functionality in the *qgis_nsw_act_topo* scripts is currently under development].
 * In your *qgis_nsw_act_topo* folder, under the _scripts_ folder, update the file _local_settings.py_ with the following information: (a) the full path of your working directory, (b) the filename of the extent layer, (c) the directory containing the vegetation tiles (if any).
 
 ### Generating the topo map
